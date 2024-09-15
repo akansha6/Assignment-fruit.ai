@@ -1,22 +1,24 @@
+#Fruit.Ai
+
 Fruit.AI is a web application designed to provide users with smart, healthy choices related to fruits. The platform offers various features including a chatbot for instant assistance, a translator for multi-language support, an FAQ section for fruit-related queries, and an "About Us" page to learn more about the mission of Fruit.AI.
 
-Features
+#Features
 AI Chat: Confidential, 24/7 chatbot assistance for fruit-related questions and tips.
 Instant Translator: Translate fruit facts and tips across different languages.
 FAQs: Quickly find answers to common fruit-related queries.
 About Us: Learn about the mission and vision of Fruit.AI.
-Technologies
+#Technologies
 Frontend: React
 Backend: Node.js, Express
 Database: MongoDB
 Authentication: JWT
 File Uploads: Multer
-Getting Started
+#Getting Started
 Prerequisites
 Node.js (>=14.x)
 MongoDB (>=4.x)
 npm or yarn
-Installation
+#Installation
 Clone the repository:
 
 bash
