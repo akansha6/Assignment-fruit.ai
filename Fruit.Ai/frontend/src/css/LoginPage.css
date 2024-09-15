@@ -1,0 +1,212 @@
+/* Resetting styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: url("https://static.vecteezy.com/system/resources/previews/036/114/055/large_2x/ai-generated-delicious-colored-fruits-on-colored-background-wallpaper-of-fruits-sliced-fruits-on-abstract-background-fruits-background-photo.jpg") no-repeat center center fixed;
+  background-size: cover; /* Make sure the image covers the entire background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+.login-container {
+  background-color: rgba(255, 255, 255, 0.95); /* Slightly more opaque for better readability */
+  padding: 30px;
+  border-radius: 12px;
+  width: 90vw;
+  max-width: 400px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-container:hover {
+  transform: translateY(-5px); /* Reduced hover effect for subtlety */
+}
+
+h1 {
+  font-size: 24px; /* Adjusted for better visual balance */
+  font-weight: 600; /* Slightly lighter weight for a more modern look */
+  color: #333;
+  margin-bottom: 20px; /* Increased margin for better spacing */
+}
+
+p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+p a {
+  color: #007bb5; /* Updated to a more standard link color */
+  text-decoration: none;
+  font-weight: 600; /* Bolder link text for better readability */
+  transition: color 0.3s;
+}
+
+p a:hover {
+  color: #0056a3; /* Darker hover color for better contrast */
+}
+
+.tab-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.tab-container span {
+  font-size: 16px;
+  padding: 12px;
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.active-tab {
+  font-weight: 600; /* Bolder text for active tab */
+  border-bottom: 3px solid #007bb5; /* Consistent with link color */
+  color: #007bb5;
+}
+
+.tab {
+  color: #999;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 20px;
+  width: 100%;
+  position: relative;
+}
+
+.input-group .icon {
+  margin-right: 12px;
+  color: #007bb5; /* Updated to match the active tab and link color */
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  width: 100%;
+  border-bottom: 2px solid #007bb5;
+  background: transparent;
+  padding: 8px 0;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group input:focus {
+  border-bottom: 2px solid #0056a3; /* Slightly darker color on focus */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.icon-toggle {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  color: #007bb5;
+  transition: color 0.3s;
+}
+
+.icon-toggle:hover {
+  color: #0056a3; /* Consistent with other hover colors */
+}
+
+.extras {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.extras label {
+  display: flex;
+  align-items: center;
+}
+
+.extras input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.forget-password {
+  color: #007bb5;
+  text-decoration: none;
+  font-weight: 600; /* Bolder text for better readability */
+  transition: color 0.3s;
+}
+
+.forget-password:hover {
+  color: #0056a3; /* Consistent with other hover colors */
+}
+
+.login-btn {
+  background-color: #007bb5; /* Updated to match other elements */
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #0056a3;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.social-icons .social-icon {
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons .social-icon:hover {
+  color: #007bb5;
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 480px) {
+  .login-container {
+    padding: 20px;
+  }
+
+  .input-group input {
+    font-size: 14px;
+    padding: 8px 0;
+  }
+
+  .login-btn {
+    font-size: 16px;
+  }
+
+  .social-icons .social-icon {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,133 @@
+/* Resetting styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: url("https://static.vecteezy.com/system/resources/previews/036/114/055/large_2x/ai-generated-delicious-colored-fruits-on-colored-background-wallpaper-of-fruits-sliced-fruits-on-abstract-background-fruits-background-photo.jpg") no-repeat center center fixed;
+  background-size: cover; /* Ensure the image covers the entire background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333; /* Ensure text color is visible */
+}
+
+.homepage-container {
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque for better readability */
+  padding: 30px;
+  border-radius: 12px;
+  width: 90vw;
+  max-width: 1200px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-section {
+  width: 100%;
+}
+
+.homepage-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.homepage-tagline {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+.feature-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 300px;
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.feature-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.feature-image {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #ddd;
+}
+
+.feature-info {
+  padding: 10px 0;
+}
+
+.feature-heading {
+  font-size: 20px;
+  font-weight: bold;
+  color: #007bb5;
+  margin-bottom: 10px;
+}
+
+.feature-description {
+  font-size: 16px;
+  color: #666;
+}
+
+.homepage-footer {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 14px;
+  color: #333;
+}
+
+.footer-decor {
+  margin-top: 10px;
+}
+
+.footer-decor-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #007bb5;
+  border-radius: 50%;
+  margin: 0 3px;
+}
+
+@media only screen and (max-width: 768px) {
+  .features-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}

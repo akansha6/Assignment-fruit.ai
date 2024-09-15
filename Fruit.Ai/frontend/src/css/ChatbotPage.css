@@ -1,0 +1,154 @@
+/* ChatbotPage.css */
+
+/* General layout styles */
+.chatbot-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9fafb;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #1a73e8;
+  padding: 20px;
+  color: white;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+  border-radius: 50%;
+}
+
+.chatbot-name {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Chat container */
+.chatbot-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.chat-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.message {
+  display: flex;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.message.user {
+  background-color: #e0f7fa;
+  align-self: flex-start;
+}
+
+.message.bot {
+  background-color: #e8f0fe;
+  align-self: flex-end;
+}
+
+.message-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.message-image {
+  width: 100%;
+  max-width: 200px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.error-message {
+  color: #d32f2f;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+/* FAQ Cards */
+.content-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.faq-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 240px;
+  text-align: center;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.faq-card:hover {
+  transform: translateY(-5px);
+}
+
+.faq-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.faq-question {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #1a73e8;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.send-button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #34a853;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.send-button:hover {
+  background-color: #2b8e42;
+}
