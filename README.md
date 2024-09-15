@@ -65,8 +65,8 @@ Fruit.AI is a comprehensive web application designed to provide users with intel
     Create a `.env` file in the `backend` directory and add the following:
 
     ```env
-    MONGO_URI=mongodb://localhost:27017/fruitdb
-    PORT=5000
+    MONGO_URI=mongodb://localhost:27017/fruit
+    PORT=3000
     ```
 
     Adjust `MONGO_URI` to match your MongoDB connection string.
