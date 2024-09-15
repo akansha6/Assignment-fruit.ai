@@ -1,4 +1,4 @@
-#Fruit.Ai
+# Fruit.Ai
 
 Fruit.AI is a web application designed to provide users with smart, healthy choices related to fruits. The platform offers various features including a chatbot for instant assistance, a translator for multi-language support, an FAQ section for fruit-related queries, and an "About Us" page to learn more about the mission of Fruit.AI.
 
