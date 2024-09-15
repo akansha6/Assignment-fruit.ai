@@ -1,136 +1,167 @@
-# Fruit.Ai
+# Fruit.AI
 
-Fruit.AI is a web application designed to provide users with smart, healthy choices related to fruits. The platform offers various features including a chatbot for instant assistance, a translator for multi-language support, an FAQ section for fruit-related queries, and an "About Us" page to learn more about the mission of Fruit.AI.
+Fruit.AI is a comprehensive web application designed to provide users with intelligent, healthy choices related to fruits. It features a variety of functionalities including a chatbot for instant support, a translator for multi-language capabilities, a detailed FAQ section, and an "About Us" page to learn more about our mission.
 
-#Features
-AI Chat: Confidential, 24/7 chatbot assistance for fruit-related questions and tips.
-Instant Translator: Translate fruit facts and tips across different languages.
-FAQs: Quickly find answers to common fruit-related queries.
-About Us: Learn about the mission and vision of Fruit.AI.
-#Technologies
-Frontend: React
-Backend: Node.js, Express
-Database: MongoDB
-Authentication: JWT
-File Uploads: Multer
-#Getting Started
-Prerequisites
-Node.js (>=14.x)
-MongoDB (>=4.x)
-npm or yarn
-#Installation
-Clone the repository:
+## Features
 
-bash
-Copy code
-git clone https://github.com/yourusername/fruit-ai.git
-cd fruit-ai
-Install backend dependencies:
+- **AI Chat:** 24/7 confidential chatbot assistance for fruit-related questions and tips.
+- **Instant Translator:** Translate fruit facts and tips across multiple languages.
+- **FAQs:** Find quick answers to common fruit-related queries.
+- **About Us:** Discover the mission and vision of Fruit.AI.
 
-bash
-Copy code
-cd backend
-npm install
-or if using Yarn:
+## Technologies
 
-bash
-Copy code
-yarn install
-Install frontend dependencies:
+- **Frontend:** React
+- **Backend:** Node.js, Express
+- **Database:** MongoDB
+- **Authentication:** JWT
+- **File Uploads:** Multer
 
-bash
-Copy code
-cd ../frontend
-npm install
-or if using Yarn:
+## Getting Started
 
-bash
-Copy code
-yarn install
-Set up environment variables:
+### Prerequisites
 
-Create a .env file in the backend directory and add the following:
+- Node.js (>=14.x)
+- MongoDB (>=4.x)
+- npm or Yarn
 
-env
-Copy code
-MONGO_URI=mongodb://localhost:27017/fruitdb
-PORT=5000
-Adjust MONGO_URI to match your MongoDB connection string.
+### Installation
 
-Create the uploads directory:
+1. **Clone the Repository:**
 
-bash
-Copy code
-cd backend
-mkdir uploads
-Running the Application
-Start the backend server:
+    ```bash
+    git clone https://github.com/yourusername/fruit-ai.git
+    cd fruit-ai
+    ```
 
-bash
-Copy code
-cd backend
-npm start
-or if using Yarn:
+2. **Install Backend Dependencies:**
 
-bash
-Copy code
-yarn start
-The backend server will run on http://localhost:5000 by default.
+    ```bash
+    cd backend
+    npm install
+    ```
 
-Start the frontend development server:
+    Or, if using Yarn:
 
-bash
-Copy code
-cd ../frontend
-npm start
-or if using Yarn:
+    ```bash
+    yarn install
+    ```
 
-bash
-Copy code
-yarn start
-The frontend application will run on http://localhost:3000 by default.
+3. **Install Frontend Dependencies:**
 
-API Endpoints
-Create FAQ
+    ```bash
+    cd ../frontend
+    npm install
+    ```
 
-POST /api/faqs
-Request Body:
-question (string, required)
-answer (string, required)
-image (file, optional)
-Response: 201 Created with the newly created FAQ object
-Get All FAQs
+    Or, if using Yarn:
 
-GET /api/faqs
-Response: 200 OK with an array of FAQ objects
-Get FAQ by ID
+    ```bash
+    yarn install
+    ```
 
-GET /api/faqs/:id
-Response: 200 OK with the FAQ object, or 404 Not Found if FAQ does not exist
-Update FAQ
+4. **Set Up Environment Variables:**
 
-PUT /api/faqs/:id
-Request Body:
-question (string, optional)
-answer (string, optional)
-image (file, optional)
-Response: 200 OK with the updated FAQ object, or 404 Not Found if FAQ does not exist
-Delete FAQ
+    Create a `.env` file in the `backend` directory and add the following:
 
-DELETE /api/faqs/:id
-Response: 200 OK with a success message, or 404 Not Found if FAQ does not exist
-Frontend Routes
-Home: /home - Landing page showcasing features and navigation links.
-Chatbot: /chatbot - Access the AI chatbot.
-Translator: /translator - Use the instant translator feature.
-FAQs: /faq - View the list of FAQs.
-About Us: /about - Learn more about Fruit.AI.
-Contributing
+    ```env
+    MONGO_URI=mongodb://localhost:27017/fruitdb
+    PORT=5000
+    ```
+
+    Adjust `MONGO_URI` to match your MongoDB connection string.
+
+5. **Create the Uploads Directory:**
+
+    ```bash
+    cd backend
+    mkdir uploads
+    ```
+
+### Running the Application
+
+1. **Start the Backend Server:**
+
+    ```bash
+    cd backend
+    npm start
+    ```
+
+    Or, if using Yarn:
+
+    ```bash
+    yarn start
+    ```
+
+    The backend server will run on [http://localhost:5000](http://localhost:5000) by default.
+
+2. **Start the Frontend Development Server:**
+
+    ```bash
+    cd ../frontend
+    npm start
+    ```
+
+    Or, if using Yarn:
+
+    ```bash
+    yarn start
+    ```
+
+    The frontend application will run on [http://localhost:3000](http://localhost:3000) by default.
+
+## API Endpoints
+
+- **Create FAQ**
+
+    - **Endpoint:** `POST /api/faqs`
+    - **Request Body:**
+      - `question` (string, required)
+      - `answer` (string, required)
+      - `image` (file, optional)
+    - **Response:** 201 Created with the newly created FAQ object
+
+- **Get All FAQs**
+
+    - **Endpoint:** `GET /api/faqs`
+    - **Response:** 200 OK with an array of FAQ objects
+
+- **Get FAQ by ID**
+
+    - **Endpoint:** `GET /api/faqs/:id`
+    - **Response:** 200 OK with the FAQ object, or 404 Not Found if FAQ does not exist
+
+- **Update FAQ**
+
+    - **Endpoint:** `PUT /api/faqs/:id`
+    - **Request Body:**
+      - `question` (string, optional)
+      - `answer` (string, optional)
+      - `image` (file, optional)
+    - **Response:** 200 OK with the updated FAQ object, or 404 Not Found if FAQ does not exist
+
+- **Delete FAQ**
+
+    - **Endpoint:** `DELETE /api/faqs/:id`
+    - **Response:** 200 OK with a success message, or 404 Not Found if FAQ does not exist
+
+## Frontend Routes
+
+- **Home:** `/home` - Landing page showcasing features and navigation links.
+- **Chatbot:** `/chatbot` - Access the AI chatbot.
+- **Translator:** `/translator` - Use the instant translator feature.
+- **FAQs:** `/faq` - View the list of FAQs.
+- **About Us:** `/about` - Learn more about Fruit.AI.
+
+## Contributing
+
 Contributions are welcome! Please follow these guidelines:
 
-Fork the repository.
-Create a new branch for each feature or fix.
-Ensure your code is well-tested.
-Submit a pull request with a clear description of your changes.
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+1. Fork the repository.
+2. Create a new branch for each feature or fix.
+3. Ensure your code is well-tested.
+4. Submit a pull request with a clear description of your changes.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
